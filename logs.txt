@@ -1,0 +1,102 @@
+$ heroku logs
+2020-10-17T16:19:40.717286+00:00 app[web.1]: Traceback (most recent call last):
+2020-10-17T16:19:40.717307+00:00 app[web.1]: File "ac03Devops.py", line 6, in <module>
+2020-10-17T16:19:40.717404+00:00 app[web.1]: app = Flask(__name__)
+2020-10-17T16:19:40.717408+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 556, in __init__
+2020-10-17T16:19:40.717695+00:00 app[web.1]: self.add_url_rule(
+2020-10-17T16:19:40.717698+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 64, in wrapper_func
+2020-10-17T16:19:40.717828+00:00 app[web.1]: return f(self, *args, **kwargs)
+2020-10-17T16:19:40.717831+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1214, in add_url_rule
+2020-10-17T16:19:40.718293+00:00 app[web.1]: self.url_map.add(rule)
+2020-10-17T16:19:40.718297+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 1386, in add
+2020-10-17T16:19:40.718750+00:00 app[web.1]: rule.bind(self)
+2020-10-17T16:19:40.718755+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 730, in bind
+2020-10-17T16:19:40.719053+00:00 app[web.1]: self.compile()
+2020-10-17T16:19:40.719057+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 794, in compile
+2020-10-17T16:19:40.719371+00:00 app[web.1]: self._build = self._compile_builder(False).__get__(self, None)
+2020-10-17T16:19:40.719375+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 945, in _compile_builder
+2020-10-17T16:19:40.719755+00:00 app[web.1]: code = compile(module, "<werkzeug routing>", "exec")
+2020-10-17T16:19:40.719759+00:00 app[web.1]: TypeError: required field "type_ignores" missing from Module
+2020-10-17T16:19:40.778196+00:00 heroku[web.1]: Process exited with status 1
+2020-10-17T16:19:40.819865+00:00 heroku[web.1]: State changed from starting to crashed
+2020-10-17T16:20:27.586312+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=devoac3.herokuapp.com request_id=476dbf73-b7a0-4b35-a302-7beb2a9e94cd fwd="191.183.197.160" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-17T16:20:29.045187+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=devoac3.herokuapp.com request_id=e0213d07-12ce-4709-8e94-3ce1ad2043c2 fwd="191.183.197.160" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-17T16:23:19.417029+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=devoac3.herokuapp.com request_id=a44a07b7-ec16-4fa0-a480-cd8f100c7131 fwd="191.183.197.160" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-17T16:23:19.682378+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=devoac3.herokuapp.com request_id=63043820-703c-4849-aad2-b640130b510f fwd="191.183.197.160" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-17T16:33:34.000000+00:00 app[api]: Build started by user lucas.pontes@aluno.faculdadeimpacta.com.br
+2020-10-17T16:34:06.071732+00:00 app[api]: Deploy 88156840 by user lucas.pontes@aluno.faculdadeimpacta.com.br
+2020-10-17T16:34:06.071732+00:00 app[api]: Release v4 created by user lucas.pontes@aluno.faculdadeimpacta.com.br
+2020-10-17T16:34:06.257138+00:00 heroku[web.1]: State changed from crashed to starting
+2020-10-17T16:34:09.238004+00:00 heroku[web.1]: Starting process with command `python ac03Devops.py`
+2020-10-17T16:34:11.633542+00:00 app[web.1]: Traceback (most recent call last):
+2020-10-17T16:34:11.633557+00:00 app[web.1]: File "ac03Devops.py", line 6, in <module>
+2020-10-17T16:34:11.633673+00:00 app[web.1]: app = Flask(__name__)
+2020-10-17T16:34:11.633691+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 556, in __init__
+2020-10-17T16:34:11.633956+00:00 app[web.1]: self.add_url_rule(
+2020-10-17T16:34:11.633977+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 64, in wrapper_func
+2020-10-17T16:34:11.634100+00:00 app[web.1]: return f(self, *args, **kwargs)
+2020-10-17T16:34:11.634126+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1214, in add_url_rule
+2020-10-17T16:34:11.634512+00:00 app[web.1]: self.url_map.add(rule)
+2020-10-17T16:34:11.634533+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 1386, in add
+2020-10-17T16:34:11.634982+00:00 app[web.1]: rule.bind(self)
+2020-10-17T16:34:11.634985+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 730, in bind
+2020-10-17T16:34:11.635295+00:00 app[web.1]: self.compile()
+2020-10-17T16:34:11.635298+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 794, in compile
+2020-10-17T16:34:11.635677+00:00 app[web.1]: self._build = self._compile_builder(False).__get__(self, None)
+2020-10-17T16:34:11.635680+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 945, in _compile_builder
+2020-10-17T16:34:11.636030+00:00 app[web.1]: code = compile(module, "<werkzeug routing>", "exec")
+2020-10-17T16:34:11.636058+00:00 app[web.1]: TypeError: required field "type_ignores" missing from Module
+2020-10-17T16:34:11.701709+00:00 heroku[web.1]: Process exited with status 1
+2020-10-17T16:34:11.749394+00:00 heroku[web.1]: State changed from starting to crashed
+2020-10-17T16:34:11.752236+00:00 heroku[web.1]: State changed from crashed to starting
+2020-10-17T16:34:14.000000+00:00 app[api]: Build succeeded
+2020-10-17T16:34:15.693080+00:00 heroku[web.1]: Starting process with command `python ac03Devops.py`
+2020-10-17T16:34:20.236019+00:00 app[web.1]: Traceback (most recent call last):
+2020-10-17T16:34:20.236334+00:00 app[web.1]: File "ac03Devops.py", line 6, in <module>
+2020-10-17T16:34:20.236612+00:00 app[web.1]: app = Flask(__name__)
+2020-10-17T16:34:20.236673+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 556, in __init__
+2020-10-17T16:34:20.237177+00:00 app[web.1]: self.add_url_rule(
+2020-10-17T16:34:20.237209+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 64, in wrapper_func
+2020-10-17T16:34:20.237453+00:00 app[web.1]: return f(self, *args, **kwargs)
+2020-10-17T16:34:20.237500+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1214, in add_url_rule
+2020-10-17T16:34:20.238369+00:00 app[web.1]: self.url_map.add(rule)
+2020-10-17T16:34:20.238401+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 1386, in add
+2020-10-17T16:34:20.239227+00:00 app[web.1]: rule.bind(self)
+2020-10-17T16:34:20.239256+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 730, in bind
+2020-10-17T16:34:20.241022+00:00 app[web.1]: self.compile()
+2020-10-17T16:34:20.241057+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 794, in compile
+2020-10-17T16:34:20.241667+00:00 app[web.1]: self._build = self._compile_builder(False).__get__(self, None)
+2020-10-17T16:34:20.241697+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 945, in _compile_builder
+2020-10-17T16:34:20.242426+00:00 app[web.1]: code = compile(module, "<werkzeug routing>", "exec")
+2020-10-17T16:34:20.242568+00:00 app[web.1]: TypeError: required field "type_ignores" missing from Module
+2020-10-17T16:34:20.347804+00:00 heroku[web.1]: Process exited with status 1
+2020-10-17T16:34:20.483118+00:00 heroku[web.1]: State changed from starting to crashed
+2020-10-17T16:34:28.690003+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=devoac3.herokuapp.com request_id=c30c0faf-fb5a-40e4-929c-f9a4bf64a7fe fwd="191.183.197.160" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-17T16:34:29.052426+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=devoac3.herokuapp.com request_id=144c1630-3e7d-485a-a8e6-1e508db8e77b fwd="191.183.197.160" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-17T16:40:48.746936+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=devoac3.herokuapp.com request_id=1ee4cb6b-d6c6-4466-b980-70e7a6458308 fwd="191.183.197.160" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-17T16:40:49.126676+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=devoac3.herokuapp.com request_id=e1d21c2a-6b59-4b82-a6a8-7a7167c51f92 fwd="191.183.197.160" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-17T16:49:32.834071+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=devoac3.herokuapp.com request_id=340e72f3-82e5-40be-ad3d-2f25082006cf fwd="191.183.197.160" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-17T16:49:33.184812+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=devoac3.herokuapp.com request_id=3c2bf556-5271-4e1e-9790-3a12d2ac0e73 fwd="191.183.197.160" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-17T16:57:31.323531+00:00 heroku[web.1]: State changed from crashed to starting
+2020-10-17T16:57:34.219219+00:00 heroku[web.1]: Starting process with command `python ac03Devops.py`
+2020-10-17T16:57:37.065312+00:00 app[web.1]: Traceback (most recent call last):
+2020-10-17T16:57:37.065332+00:00 app[web.1]: File "ac03Devops.py", line 6, in <module>
+2020-10-17T16:57:37.065475+00:00 app[web.1]: app = Flask(__name__)
+2020-10-17T16:57:37.065502+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 556, in __init__
+2020-10-17T16:57:37.065784+00:00 app[web.1]: self.add_url_rule(
+2020-10-17T16:57:37.065816+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 64, in wrapper_func
+2020-10-17T16:57:37.065965+00:00 app[web.1]: return f(self, *args, **kwargs)
+2020-10-17T16:57:37.065969+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1214, in add_url_rule
+2020-10-17T16:57:37.066393+00:00 app[web.1]: self.url_map.add(rule)
+2020-10-17T16:57:37.066396+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 1386, in add
+2020-10-17T16:57:37.066869+00:00 app[web.1]: rule.bind(self)
+2020-10-17T16:57:37.066902+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 730, in bind
+2020-10-17T16:57:37.067222+00:00 app[web.1]: self.compile()
+2020-10-17T16:57:37.067225+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 794, in compile
+2020-10-17T16:57:37.067570+00:00 app[web.1]: self._build = self._compile_builder(False).__get__(self, None)
+2020-10-17T16:57:37.067571+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 945, in _compile_builder
+2020-10-17T16:57:37.067948+00:00 app[web.1]: code = compile(module, "<werkzeug routing>", "exec")
+2020-10-17T16:57:37.067998+00:00 app[web.1]: TypeError: required field "type_ignores" missing from Module
+2020-10-17T16:57:37.127081+00:00 heroku[web.1]: Process exited with status 1
+2020-10-17T16:57:37.182400+00:00 heroku[web.1]: State changed from starting to crashed
+
