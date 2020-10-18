@@ -2,7 +2,6 @@ import os
 from flask import Flask, jsonify, request
 from math import sqrt
 
-
 app = Flask(__name__)
 
 @app.route('/')
