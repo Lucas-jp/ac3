@@ -9,27 +9,25 @@ app = Flask(__name__)
 @app.route('/')
 
 
-def nao_entre_em_panico():
-    num = int(input('senha: '))
-    if num == 1234: 
-        limite = 100
-        c = 1
-        p = 1
-        numero = 3
+def nao_entre_em_panico(): 
+    limite = 100
+    c = 1
+    p = 1
+    numero = 3
 
-        primo = "2,"
+    primo = "2,"
 
-        while p < limite:
-            ehprimo = 1
-            for i in range(2, numero):
-                if numero % i == 0:
-                    ehprimo = 0
-                    break
-            if (ehprimo):
-                primo = primo + str(numero) + ','
-                p += 1
+    while p < limite:
+        ehprimo = 1
+        for i in range(2, numero):
+            if numero % i == 0:
+                ehprimo = 0
+                break
+        if (ehprimo):
+            primo = primo + str(numero) + ','
+            p += 1
             numero += 1
-        return primo
+    return primo
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
